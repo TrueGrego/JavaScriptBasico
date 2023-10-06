@@ -1,0 +1,1 @@
+document.write("Primeira página em Java Script")
