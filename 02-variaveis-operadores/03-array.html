@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Manipulação de Arrays</h1>
+    <script>
+        //Declaração de uma Array
+        let frutas;
+
+
+        //Inicialização
+        frutas = ["maça", "banana", "laranja"];
+
+        //delcaraçaão de inicialização
+        let notas = [ 8,7,9,10];
+
+        document.write("elementos de array: ");
+        document.write(frutas);
+        document.write("<br>");
+
+
+        let segundoElemento = frutas[1];
+        document.write(`Segundo elemento: ${segundoElemento}<br>`);
+
+        //Alterar um valor de array nomeArray[indice] = novoValor
+        frutas[1] = "melancia";
+        document.write(`segundo elemento da array apos alteração ${frutas[1]} <br>`);
+
+        //retorna a quantidade de array nomeArray.length
+        document.write(`array frutas possui ${frutas.lenght} elementos <br>`);
+
+        //adicionar um elemento no final do array nomeArray.push("novoValor");
+        frutas.push("uva");
+        document.write(`elemento do array: ${frutas} <br>`);
+        frutas.push("manga");
+        document.write(`elemento do array: ${frutas} <br>`);
+
+        //remover o ultimo elemento de array nomeArray.pop()
+        let frutaRemovida = frutas.pop();
+        document.write(`A ${frutaRemovida} foi excluida da array frutas <br>`);
+        document.write(`elemento do array: ${frutas} <br>`);
+
+        //Adicionar um elemento em uma posição especifica nomeArray
+        frutas.splice(2,0,"Manga");
+
+        //remover um elemento de posição especifica
+        frutas.splice(3,1);
+        document.write(`elemento`)
+
+    </script>
+</body>
+</html>

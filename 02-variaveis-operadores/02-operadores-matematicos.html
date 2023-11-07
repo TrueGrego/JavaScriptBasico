@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operadores Mátemáticos</title>
+    <title>Operadores Matematicos</title>
 </head>
 
 <body>
+
     <h1>Calculadora Simples</h1>
+
     <script>
-        //Declara as variáveis
+        //declrar variaveis
         let operando1;
-        let operando2;
+        let oprerando2;
 
-        //Solicitar o primeiro operando
-        operando1 = prompt(" digite o primeiro numero:");
+        //solicitar o primeiro operando
+        operando1 = parseFloat( prompt("digite o primeiro numero:") );
 
-        //Solicitar o segundo operando
-        operando2 = prompt(" digite o segundo numero:");
+        //solicitar o segundo operando
+        operando2 = parseFloat( prompt("digite o segundo numero:") );
 
-        document.write(`Adição: $(operando1) + $(operando2) = $(operando1 + operando2)`);
-        document.write(`Subtração: $(operando1) - $(operando2) = $(operando1 - operando2)`);
-        document.write(`Multiplicação: $(operando1) x $(operando2) = $(operando1 x operando2)`);
-        document.write(`Divisão: $(operando1) / $(operando2) = $(operando1 / operando2)`);
+        document.write(`adição: ${operando1} + ${operando2} = ${operando1 + operando2} <br> `);
+        document.write(`subtração: ${operando1} - ${operando2} = ${operando1 - operando2} <br> `);
+        document.write(`multiplicação: ${operando1} * ${operando2} = ${operando1 * operando2} <br> `);
+        document.write(`divisão: ${operando1} / ${operando2} = ${operando1 / operando2} <br> `);
+        document.write(`resto da divisão: ${operando1} % ${operando2} = ${operando1 % operando2} <br> `);
+        document.write(`exponenciação: ${operando1} elevado a ${operando2} = ${operando1 ** operando2} <br> `);
+        document.write(`unário de incremento: ${operando1} apos incrementar = ${++operando1} <br> `);
+        document.write(`unário de decremento: ${operando1} apos decrementar = ${--operando1} <br> `);
+        
+        
+        </script>
 
-    </script>
 </body>
 
 </html>
